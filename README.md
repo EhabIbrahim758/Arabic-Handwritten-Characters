@@ -1,4 +1,4 @@
-# Coffee-Leaves-Multi-Label-Classification Project
+# Arabic Handwritten Character Recognition Project
 
 ## Contents
 <ul> 
@@ -9,34 +9,23 @@
 </ul>
  
 ## Data
-The data consists of a total of 1747 images of coffee entire leaves, including healthy leaves and diseased leaves, affected by
-one or more types of biotic stresses. The dataset contains the following stresses: leaf miner, rust, brown leaf spot and cercospora leaf spot. 
-The images were labeled in relation to the predominant biotic stress of each leaf and its severity
+The data is images of arabic characters written by hand and there is a folder for images and csv file for labels
 
-<img src="sample images.PNG">
+<img src="images/sample images.PNG">
 
 ## Model
-I have implementred a model consists of **VGG16** as feature extractor and on top of it there is **6 head consists of fully connected layers** 
-which are used for the following :
-- The **first** and the **second** heads are used to classify the severity and the predominant stress present in tha images
-- The other **four** heads are used to classify the four stresses present in the images
-So i have 6 output from the network as it is **Multi-Label Classification** 
+The model is simple and consists of number of convolution layers and pooling then fully connected layers before the prediction layer with softmax activation function
 
 ## Installation
+You should have torch and torchvision
+
 To pull the repository on your machine
 ```
-git clone https://github.com/EhabIbrahim758/Coffee-Leaves-Multi-Label-Classification.git
+git clone https://github.com/EhabIbrahim758/Arabic-Handwritten-Characters.git
 ```
-
-if you need to download the trained model use this line
-```
-git lfs pull
-```
-
-You should have torch and torchvision
 
 ## Results
 This table have all accuracy of the 6 heads 
-<img src = "accuracy results.PNG" />
+<img src = "images/heatmap.PNG" />
 
 
