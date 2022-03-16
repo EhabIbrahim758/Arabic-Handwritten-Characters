@@ -25,7 +25,7 @@ git clone https://github.com/EhabIbrahim758/Arabic-Handwritten-Characters.git
 ```
 
 ## Results
-This table have all accuracy of the 6 heads 
+This is the confusion matrix for all classes on test data
 <img src = "images/heatmap.png" />
 
 
